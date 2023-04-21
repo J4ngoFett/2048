@@ -1,0 +1,83 @@
+.count {
+    &:before {
+        content: 'счет';
+        position: absolute;
+        width: 100%;
+        top: 1.5vmin;
+        font-size: 2vmin;
+        text-transform: uppercase;
+        color: black;
+    }
+}
+
+.record {
+    &:before {
+        content: 'рекорд';
+        position: absolute;
+        width: 100%;
+        top: 1vmin;
+        font-size: 2vmin;
+        text-transform: uppercase;
+        color: black;
+    }
+}
+
+.title {
+    padding: 1.5vmin;
+    font-size: 7vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .count,
+.header .record {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vmin 1vmin;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2vmin 5vmin;
+    background-color: #bbb;
+    text-align: center;
+    border-radius: 1vmin;
+    position: relative;
+    color: white;
+    line-height: 1vmin;
+    font-size: 3vmin;
+    height: 10vmin;
+    min-width: 20vmin;
+}
+
+@media screen 
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    .count {
+        &:before {
+            font-size: 3vmin;
+        }
+    }
+    
+    .record {
+        &:before {
+            font-size: 3vmin;
+        }
+    }
+    
+    .title {
+        padding: 1.5vmin;
+        font-size: 12.5vmin;
+    }
+    
+    .header .count,
+    .header .record {
+        margin: 1vmin 1vmin;
+        padding: 3vmin 6vmin;
+        border-radius: 2vmin;
+        line-height: 2.5vmin;
+        font-size: 5vmin;
+        height: 15vmin;
+        min-width: 25vmin;
+    }
+}

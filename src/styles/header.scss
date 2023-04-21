@@ -1,0 +1,34 @@
+.header-container {
+    margin: auto;
+    padding: 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    div {
+        margin: 1vmin;
+        padding: 1vmin 1vmin;
+        background-color: #333;
+    }
+}
+
+.header {
+    padding: 0 0 2vmin;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen 
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    .header-container {
+        div {
+            margin:2vmin;
+            padding: 1vmin;
+        }
+    }
+    
+    .header {
+        padding: 0 0 3vmin;
+    }
+}

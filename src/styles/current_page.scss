@@ -1,0 +1,39 @@
+#current-page {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: #2196f3;
+}
+
+.rules {
+    --cell-size: 60vmin;
+    --cell-gap: 1vmin;
+    position: relative;
+    display: grid;
+    grid-template-columns:  var(--cell-size);
+    grid-template-rows:  var(--cell-size);
+    gap: var(--cell-gap);
+    border-radius: 1vmin;
+    font-size: 4vmin;
+    color: aquamarine;
+    text-align:justify;
+    padding: 1vmin 1vmin 0vmin 1vmin;
+    background-color: #444;
+}
+
+.title-rules {
+    font-size: 8vmin;
+    margin: 2vmin;
+    text-align: center;
+}
+
+@media screen 
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    .rules {
+        --cell-size: 83vmin;
+        --cell-gap: 1vmin;
+        font-size: 6vmin;
+    }
+}
